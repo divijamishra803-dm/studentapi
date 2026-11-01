@@ -11,7 +11,7 @@ class StudentServiceTest {
     @Test
     void addStudent_returnsSavedStudent() {
         Student s = service.add(new Student(1, "Asha", 8.5));
-        assertEquals("Asha", s.name());
+        assertEquals("Wrong", s.name());
     }
 
     @Test
